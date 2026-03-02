@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhil | Silly Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+      color: #764ba2;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #764ba2;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #e8e8ff;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 15px;
+      background: #764ba2;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background: #5a3780;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#fun">Fun</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="container hero">
+      <img src="your-photo.jpg" alt="Akhil's Photo Placeholder">
+      <h1>Hey 👋 I'm Akhil</h1>
+      <p>
+        Professional overthinker. Part-time genius. Full-time legend in my own mind.
+        I build cool stuff, learn random things at 2AM, and sometimes actually finish what I start.
+      </p>
+      <br>
+      <p><strong>Hobbies:</strong> Coding, gaming, late-night productivity bursts, watching tech videos, and pretending I understand everything.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills (Some Real, Some Questionable)</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript (and Googling errors professionally).</p>
+        </div>
+        <div class="card">
+          <h3>Problem Solving</h3>
+          <p>Can fix bugs after staring at them dramatically.</p>
+        </div>
+        <div class="card">
+          <h3>Weird Skills</h3>
+          <p>Remembering useless facts. Detecting WiFi strength by vibes.</p>
+        </div>
+        <div class="card">
+          <h3>Focus Mode</h3>
+          <p>Either 0% focus or 200% unstoppable machine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Freelance Creator</strong> – Built cool websites and learned from mistakes.</li>
+        <li><strong>Student Life Survivor</strong> – Mastered deadlines at the last minute.</li>
+        <li><strong>Self-Taught Everything</strong> – YouTube University Graduate 🎓</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Project 1</h3>
+          <p>Amazing project description goes here.</p>
+          <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Project 2</h3>
+          <p>Another masterpiece I made at 3AM.</p>
+          <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fun">
+    <div class="container">
+      <h2>Random Fun Facts About Me</h2>
+      <ul>
+        <li>I once fixed a bug by doing absolutely nothing.</li>
+        <li>I start 10 projects and finish... some of them.</li>
+        <li>I think dark mode makes me code better.</li>
+        <li>I can survive on chai and WiFi.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact">
+      <h2>Contact Me</h2>
+      <p>Let’s build something awesome or just talk tech!</p>
+      <a href="mailto:your-email@example.com">Email Me</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Akhil | Built with caffeine and questionable decisions ☕</p>
+  </footer>
+
+</body>
+</html>
